@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">KHumate Contact Form</h1>
+        <p id="description">Please enter your contact details, and we'll get back to you as soon as possible.</p>
+    </header>
+
+    <main>
+        <div>
+            <form id="survey-form">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email..."required><br>
+
+                <label for="phone">Phone Number</label><br>
+                <input type="number" id="phone" name="phone" placeholder="Enter your phone number..."required><br>
+
+                <label for="msg-category">Choose A Category</label><br>
+                <select name="msg-category" id="dropdown" required>
+                    <option value="seller">I want to sell</option>
+                    <option value="buyer">I want to buy</option>
+                    <option value="employment">I am looking for employment</option>
+                    <option value="other">Other topics</option>
+                </select>
+
+                
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
