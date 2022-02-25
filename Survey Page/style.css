@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root{
+    background-color: #ffa3d6;
+    background-image: url("gaymerlogo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width:50%;
+  margin: auto;
+  color: white;
+  
+}
+
+input{
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.center{
+  display: grid;
+  place-items: center;
+}
+
+.input-box{
+  width: 100%;
+  height: 30px;
+}
+
+#survey-form{
+    background: rgba(158,105,186,0.8);
+    padding: 1em;
+}
+

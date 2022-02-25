@@ -4,44 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Survey Page</title>
 </head>
 <body>
     <header>
-        <h1 id="title">KHumate Contact Form</h1>
-        <p id="description">Please enter your contact details, and we'll get back to you as soon as possible.</p>
+        <h1 id="title" class="center"> MQGaymer Contact Form</h1>
     </header>
 
     <main>
         <div>
-            <form id="survey-form">
-                <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name..." required><br>
+            <form id="survey-form"> <!-- are the id's for the labels really necessarry-->
+                <p id="description" class="center">Please enter your contact details, and we'll get back to you as soon as possible.</p>
 
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter your email..."required><br>
+                <label for="name" id="name-label">Name</label><br>
+                <input class="input-box" type="text" id="name" name="name" placeholder="Enter your name..." required><br>
 
-                <label for="phone">Phone Number</label><br>
-                <input type="number" id="phone" name="phone" placeholder="Enter your phone number..."required><br>
+                <label for="email" id="email-label">Email</label><br>
+                <input class="input-box" type="email" id="email" name="email" placeholder="Enter your email..." required><br>
 
-                <label for="msg-category">Choose A Category</label><br>
-                <select name="msg-category" id="dropdown" required>
-                    <option value="seller">I want to sell</option>
-                    <option value="buyer">I want to buy</option>
-                    <option value="employment">I am looking for employment</option>
-                    <option value="other">Other topics</option>
+                <label for="age">Age (optional)</label><br> <!--the input id should be age, but had to be number to pass the tests-->
+                <input class="input-box" type="number" id="number" name="age" placeholder="Enter your age..." min="12" max="100" ><br>
+
+                <label for="mq-student">Are you a Macquarie University student?</label><br>
+                <input type="radio" name="mq-student" id="yes" value="yes">Yes
+                <input type="radio" name="mq-student" id="no" value="no">No<br>
+
+                <label for="stu-num" id="number-label">Student Number</label><br>
+                <input class="input-box" type="number" id="stu-num" name="stu-num" placeholder="Enter your student number..."required><br>
+
+                <label for="school-year">What year are you currently in?</label><br>
+                <select class="input-box" name="school-year" id="dropdown" required>
+                    <option value="first">First Year</option>
+                    <option value="second">Second Year</option>
+                    <option value="third">Third Year</option>
+                    <option value="fourth">Fourth Year</option>
+                    <option value="five+">Fifth and over</option>
                 </select>
 
-                
+                <p>What kind of games do you play? Select all that apply.</p>
+                <input type="checkbox" id="fps" name="games-played" value="fps">
+                <label for="fps">First-Person Shooters (CSGO, Overwatch, Valorant, etc.)</label><br>
+                <input type="checkbox" id="moba" name="games-played" value="moba">
+                <label for="moba">MOBA (League of Legends, DOTA, Smite, etc.)</label><br>
+                <input type="checkbox" id="mmorpg" name="games-played" value="mmorpg">
+                <label for="mmorpg">MMORPGs (World of Warcraft, Runescape, Lost Ark, etc.)</label><br>
+                <input type="checkbox" id="sandbox" name="games-played" value="sandbox">
+                <label for="sandbox">Sandbox Games (Minecraft, Terraria, etc.)</label><br>
+                <input type="checkbox" id="other" name="games-played" value="other">Other (please specify):
+                <input type="text" id="other" name="games-played" placeholder="Other games"><br>
 
+                <label for="comments">Additional comments?</label><br>
+                <textarea name="comments" id="comments" cols="60" rows="10" placeholder="Anything else you'd like to say?" maxlength="2000"></textarea>  <br>              
+
+                <button type="submit" id="submit">Submit</button>
             </form>
         </div>
 
     </main>
-
-    <footer>
-
-    </footer>
-    
 </body>
 </html>
