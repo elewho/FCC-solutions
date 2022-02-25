@@ -1,0 +1,33 @@
+#info-container{
+    display: grid;
+    grid-template-columns: 100px 50%;
+  justify-content: center;
+}
+
+.grid-class{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+}
+
+#info-title{
+    text-align: center;
+}
+
+.shift-down{
+    transform: translate(0, 20px);
+}
+
+h3{
+    transform: translate(0, -5px);
+margin-bottom: 0px;    
+}
+
+p{
+    transform: translate(0,-3px);
+margin-top: 0px;
+}
+
+#video{
+    display: block;
+    margin:  auto;
+}
