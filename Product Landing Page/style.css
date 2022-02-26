@@ -1,7 +1,21 @@
+html, body{
+    margin: 0;
+}
+
 #info-container{
     display: grid;
     grid-template-columns: 100px 50%;
   justify-content: center;
+}
+
+div{
+    padding:10px;
+}
+
+#offer-container{
+    background-color: #c8ccc9;
+    padding-top: 5px;
+ 
 }
 
 .grid-class{
@@ -15,6 +29,7 @@
 
 .shift-down{
     transform: translate(0, 20px);
+    color: green;
 }
 
 h3{
@@ -31,3 +46,20 @@ margin-top: 0px;
     display: block;
     margin:  auto;
 }
+
+#pricing-container{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: #c8ccc9;
+}
+
+.pricing-cards{
+    width:250px;
+    height:350px;
+    border: 2px solid black;
+    margin: 60px;
+    text-align: center;
+}
+
+
