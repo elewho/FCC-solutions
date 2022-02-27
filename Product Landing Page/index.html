@@ -10,29 +10,25 @@
 </head>
 <body>
     <header id="header">
-        <div>
+        <div id="nav">
             <img src="logo.webp" alt="KHumate logo" id="header-img">
             <nav id="nav-bar">
                 <ul>
                     <li class="nav-link"><a href="#info-container">About Us</a></li>
-                    <li class="nav-link"><a href="#">Pricing</a></li>
-                    <li class="nav-link"><a href="#">Contact Us</a></li>
+                    <li class="nav-link"><a href="#pricing-container">Pricing</a></li>
+                    <li class="nav-link"><a href="#email-container">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
-        
     </header>
 
     <main>
         <div>
-            <img id="banner-img" src="#" alt="KHumate banner">
+            <img id="banner-img" src="corn.jpeg" alt="KHumate banner">
         </div>
+        
         <div id="offer-container">
         <h2 id="info-title">What We Offer</h2>
-
-       
-
-        
        <div id="info-container">
            <div class="grid-class">
             <i class="fa-solid fa-seedling fa-3x shift-down"></i>
@@ -90,6 +86,15 @@
                 <button type="">SELECT</button>
             </div>
         </div>
+      
+      <div id=email-container>
+        <form action="https://www.freecodecamp.com/email-submit">
+          <label for="email" id="email-label"><strong>Interested?</strong></label><br><br>
+          <p>Submit your email and we'll get in contact with you as soon as possible!</p>
+          <input type="email" id="email"></input>
+          <input type="submit" id="submit" value="Submit"></input>
+        </form>
+      </div>
     </main>
 
     <footer>
