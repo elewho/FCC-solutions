@@ -14,16 +14,16 @@
             <img src="logo.webp" alt="KHumate logo" id="header-img">
             <nav id="nav-bar">
                 <ul>
-                    <li class="nav-link"><a href="#info-container">About Us</a></li>
-                    <li class="nav-link"><a href="#pricing-container">Pricing</a></li>
-                    <li class="nav-link"><a href="#email-container">Contact Us</a></li>
+                    <li class="no-list-type"><a class="nav-link" href="#info-container">About Us</a></li>
+                    <li class="no-list-type"><a class="nav-link" href="#pricing-container">Pricing</a></li>
+                    <li class="no-list-type"><a class="nav-link" href="#email-container">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div>
+        <div id="banner-container">
             <img id="banner-img" src="corn.jpeg" alt="KHumate banner">
         </div>
         
@@ -32,7 +32,6 @@
        <div id="info-container">
            <div class="grid-class">
             <i class="fa-solid fa-seedling fa-3x shift-down"></i>
-            
             <i class="fa-solid fa-droplet fa-3x shift-down"></i>
             <i class="fa-solid fa-handshake fa-3x shift-down"></i>
            </div>
@@ -64,7 +63,6 @@
                 <h4>PHP10,000</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, nihil!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, facere.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto.</p>
                 <button type="">SELECT</button>
             </div>
 
@@ -73,7 +71,6 @@
                 <h4>PHP5,000</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, nihil!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, facere.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto.</p>
                 <button type="">SELECT</button>
             </div>
 
@@ -82,24 +79,22 @@
                 <h4>PHP3,000</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, nihil!</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, facere.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto.</p>
                 <button type="">SELECT</button>
             </div>
         </div>
       
       <div id=email-container>
-        <form action="https://www.freecodecamp.com/email-submit">
-          <label for="email" id="email-label"><strong>Interested?</strong></label><br><br>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">          
+            <label for="email" id="email-label"><strong>Interested?</strong></label><br><br>
           <p>Submit your email and we'll get in contact with you as soon as possible!</p>
-          <input type="email" id="email"></input>
+          <input type="email" id="email" name="email" placeholder="Enter your email..."></input>
           <input type="submit" id="submit" value="Submit"></input>
         </form>
       </div>
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        <p>&copy; Omniatechnology, Inc.</p>
     </footer>
-    
 </body>
 </html>

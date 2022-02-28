@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
 html, body{
     margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
-
+    font-family: 'Poppins', sans-serif;
 }
+
 
 #info-container{
     display: grid;
@@ -12,11 +16,15 @@ html, body{
 
 #nav{
     display: flex;
-    background-color: aliceblue;
+    background-color: #FFFFFF;
 }
 
 div{
     padding:10px;
+}
+
+.no-list-type{
+    list-style-type: none;
 }
 
 #nav-bar{
@@ -28,24 +36,35 @@ ul{
     justify-content: end;
 }
 
-a{
-    text-decoration: none;
-}
-
 .nav-link{
     list-style-type: none;
-padding-right: 30px;
+    text-decoration: none;
+    padding-right: 50px;
+    text-transform: uppercase;
+}
+
+a {
+    color: #000000;
+}
+
+#banner-container{
+    padding: 0;
+    background-color: red;
 }
 
 #banner-img{
-width: 100%;
-padding: 0;
+    display: block; /*needed to get rid of padding at bottom of img. img is by default an inline , and the padding at the bottom is the line height */
+    width: 100%;
+    padding: 0;
 }
 
 #offer-container{
+    margin: 0;
     background-color: #c8ccc9;
-    padding-top: 5px;
- 
+}
+
+#debug{
+    background-color: red;
 }
 
 .grid-class{
@@ -62,23 +81,24 @@ padding: 0;
     color: green;
 }
 
-h3{
-    transform: translate(0, -5px);
-margin-bottom: 0px;    
+#description-container{
+    padding: 0px;
 }
 
+h3{
+    margin: 0;
+    padding: 0;
+
+}
+
+p.grid-class{
+    padding: 0;
+    margin: 0;
+}
 
 #header-img{
     width:175px;
     height: 45px;
-}
-
-
-
-
-p{
-    transform: translate(0,-3px);
-margin-top: 0px;
 }
 
 #video{
@@ -102,10 +122,25 @@ margin-top: 0px;
 }
 
 #email-container{
-  text-align: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #email-label{
   font-size: 35px;
-  
+}
+
+#footer{
+    background-color:#c8ccc9;
+padding:10px;
+    text-align: end;
+}
+
+@media (max-width: 100px){
+    p{
+        font-size: small;
+    }
 }
