@@ -1,0 +1,48 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: hsl(0, 0%, 94%);
+    line-height: 1.6;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+}
+
+#title{
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+#navbar{
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+.nav-link{
+  text-decoration: none;
+}
+
+#navbar li{
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+#navbar a{
+    padding-left: 20px;
+}
+
+#nav-list{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#content{
+    padding-left: 15px;
+}
