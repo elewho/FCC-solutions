@@ -6,12 +6,18 @@ html, body{
 
 }
 
+h2{
+    color: white;
+    font-size: 4em;
+}
+
 #navbar {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    background-color: brown;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    background-color: #FAA857;
     width: 100%;
     position: fixed;
+    box-shadow: 0 0.4px #000000;
 }
 
 #navbar ul{
@@ -34,28 +40,37 @@ html, body{
     margin: auto;
     height: 100vh;
     width: 100%;
-    background-color: aqua;
+    background-color: #15323B;
     justify-content: center;    
     flex-direction: column;
 }
 
-#welcome-section h1, p{
+#welcome-section h1{
     margin-right: auto;
     margin-left: auto;
+    color:white;
+    font-size: 5em;
+}
+
+#welcome-section p{
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    font-size: 2.1em;
 }
 
 #projects{
     display: block;
     text-align: center;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: #2B687A;
 }
 
 #projects h2{
     margin: 0;
     padding: 0;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
 }
 
 #projects-grid{
@@ -69,33 +84,77 @@ html, body{
 
 .project-tile{
     border: 1px solid black;
-    background-color: bisque;
+    background-color: #261808;
     width: 400px;
     height: 460px;
 }
 
+.project-tile h4, a{
+    text-decoration: none;
+    letter-spacing: 0.4px;
+    color: white;
+    transition: 0.8s ease-in;
+}
+
+.project-tile h4:hover{
+    letter-spacing: 2.5px;
+    transition: 0.8s ease-out;
+}
 .project-tile img{
     width: 100%;
-    height: calc(100% - 6.8rem);
+    height: calc(100% - 3.9rem);
     object-fit: cover;
 }
 
 #contacts {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    text-align: center;
     height: 40vh;
     width: 100%;
-    background-color: aqua;
+    background-color: #15323B;
 }
 
-#contacts li{
-    display: flex;
-    list-style-type: none;
+#contacts h2{
+    width: 100%;
+    justify-content: center;
 }
+
+#contacts i{
+    padding: 0.8em;
+}
+
+#contacts a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;
+    padding: 1.1em;
+}
+
 footer{
-    background-color:pink;
+    background-color:#FAA857;
     padding:3em;
     text-align: end;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    h2{
+        font-size: 3em;
+    }
+
+    #welcome-section{
+        text-align: center;
+    }
+
+    #projects-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contacts a{
+        flex-direction: row;
+    }
 }
